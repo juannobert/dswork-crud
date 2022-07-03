@@ -24,6 +24,7 @@ public class Client {
 	
 	private Double income;
 	
+
 	private Instant birthDate;
 	
 	private Integer children;
