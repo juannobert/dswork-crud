@@ -55,4 +55,12 @@ public class ClientService {
 
 	}
 
+	public void delete(Long id) {
+		try {
+			repository.deleteById(id);
+		} catch (EmptyResultDataAccessException e) {
+			throw new ResourceNotFoundException("Not exist entity with id " + id);
+		} 
+
+	}
 }
